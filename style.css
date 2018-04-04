@@ -446,6 +446,34 @@ ol.type li a:hover {
 	padding: 0;
 	margin: 0;
 }
+.ranking h4 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+.ranking span.placing {
+	font-size: 40px;
+	font-weight: 600;
+	display: block;
+	color: #121d1f;
+	padding: 0;
+	margin: 0;
+}
+.description h4 {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+.description span.description2 {
+	font-size: 24px;
+	font-weight: 600;
+	display: block;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
 /* Resume Section */
 #resume {
 	padding: 100px 0;
