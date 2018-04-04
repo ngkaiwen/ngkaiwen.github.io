@@ -7,7 +7,7 @@ body, html {
 	height: 100% !important;
 }
 h1 {
-	font-weight: 701;
+	font-weight: 700;
 }
 h1 strong {
 	font-weight: 900;
@@ -29,6 +29,19 @@ h5 {
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 20px;
+}
+h6 {
+	line-height: 20px;
+	margin: 0;
+	color: #2980b9;
+	font-weight: 400;
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+h7 {
+	color: #2980b9;
+	font-weight: 400;
+	font-size: 24px;
 }
 p.intro {
 	font-size: 16px;
@@ -72,6 +85,16 @@ hr {
 	height: 4px;
 	width: 70px;
 	text-align: center;
+	position: relative;
+	background: #7bc3d1;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+hr2 {
+	height: 4px;
+	width: 70px;
+	text-align: left;
 	position: relative;
 	background: #7bc3d1;
 	margin: 0 auto;
@@ -181,7 +204,11 @@ hr {
 	-o-background-size: cover;
 }
 .section-title.center {
-	padding: 25px 0 45px 0;
+	padding: 25px 0 35px 0;
+}
+.sub-section-title.left {
+	padding: 5px 0 5px 0;
+
 }
 /* About Section */
 #about {
@@ -224,8 +251,8 @@ hr {
 .chart {
 	position: relative;
 	display: inline-block;
-	width: 152px;
-	height: 152px;
+	width: 140px;
+	height: 140px;
 	margin-bottom: 26px;
 	text-align: center;
 }
@@ -237,14 +264,15 @@ hr {
 .percent {
 	display: inline-block;
 	font-size: 21px;
-	color: #121d1f;
-	line-height: 152px;
+	color: #fff;
+	line-height: 140px;
 	z-index: 2;
 }
 .percent:after {
 	content: '%';
 	margin-left: 0.1em;
 	font-size: .8em;
+}
 }/* Services Section */
 #services-section {
 	padding: 100px 0;
@@ -489,9 +517,9 @@ ol.type li a:hover {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 40px;
+	left: 100%;
 	width: 2px;
-	margin-left: -1.5px;
+	margin-left: 0px;
 	background-color: #eee;
 }
 .timeline>li {
@@ -501,7 +529,7 @@ ol.type li a:hover {
 }
 .timeline>li:before, .timeline>li:after {
 	content: " ";
-	display: table;
+	display: block;
 }
 .timeline>li:after {
 	clear: both;
@@ -510,7 +538,7 @@ ol.type li a:hover {
 	float: right;
 	position: relative;
 	width: 100%;
-	padding: 0 20px 0 100px;
+	padding: 0 10px 0 10px;
 	text-align: left;
 }
 .timeline>li .timeline-panel:before {
@@ -529,7 +557,7 @@ ol.type li a:hover {
 	z-index: 100;
 	position: absolute;
 	left: 0;
-	width: 70px;
+	width: 1000px; // previously 70
 	height: 70px;
 	margin-left: 0;
 	border: 1px solid #eee;
@@ -544,7 +572,7 @@ ol.type li a:hover {
 }
 .timeline>li.timeline-inverted>.timeline-panel {
 	float: right;
-	padding: 0 20px 0 100px;
+	padding: 0 20px 0 10px;
 	text-align: left;
 }
 .timeline>li.timeline-inverted>.timeline-panel:before {
@@ -703,7 +731,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 /* Media Queries */
-@media(min-width:768px) {
+@media(min-width:15px) { /* 768*/
 .intro {
 	height: 100%;
 	padding: 0;
@@ -743,13 +771,13 @@ header .intro-text {
 }
 .timeline>li .timeline-panel {
 	float: left;
-	width: 41%;
-	padding: 0 20px 20px 30px;
+	width: 43%; /*was 41*/
+	padding: 0 0px 20px 10px; /*was 0 20 20 30 */
 	text-align: right;
 }
 .timeline>li .timeline-image {
 	left: 50%;
-	width: 100px;
+	width: 100px; // was 100
 	height: 100px;
 	margin-left: -50px;
 }
@@ -776,7 +804,7 @@ header .intro-text {
 	padding: 0 20px 20px;
 }
 .timeline>li .timeline-image {
-	width: 150px;
+	width: 400px;
 	height: 150px;
 	margin-left: -75px;
 }
@@ -795,7 +823,7 @@ header .intro-text {
 	min-height: 170px;
 }
 .timeline>li .timeline-panel {
-	padding: 10px 20px 20px 100px;
+	padding: 10px 20px 20px 50px; /* last number was 100*/
 }
 .timeline>li .timeline-image {
 	width: 150px;
@@ -807,6 +835,6 @@ header .intro-text {
 	font-weight: 400;
 }
 .timeline>li.timeline-inverted>.timeline-panel {
-	padding: 10px 100px 20px 20px;
+	padding: 10px 50px 20px 20px;
 }
 }
