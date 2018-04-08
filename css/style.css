@@ -220,8 +220,14 @@ hr2 {
 }
 #about img {
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+}
+#about img-logo {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
 	display: inline-block;
 }
 #about p {
@@ -286,11 +292,26 @@ hr2 {
 	margin-top: 40px;
 }
 #services-section i.fa {
-	font-size: 36px;
-	margin-right: 20px;
+	font-size:46px;
+	margin-right: 10px;
 	color: #71bd46;
 	padding-bottom: 10px;
 	display: block;
+}
+.services-left{
+	align:left;
+	padding-left:100px;
+}
+.services-middle{
+	align:left;
+		width:300px;
+}
+.services-right{
+	align:left;
+		padding-left:100px;
+}
+.services-filler{
+		width:300px;
 }
 /* Testimonials Section */
 #testimonials {
@@ -506,6 +527,18 @@ ol.type li a:hover {
 #resume {
 	padding: 100px 0;
 	background: #f6f6f6;
+}
+.resume-logo-1 {
+	align:right;
+	margin-left: 200px;
+}
+.resume-logo-2 {
+	align:left;
+	margin-right: 250px;
+}
+.resume-logo-3 {
+	align:right;
+	margin-left: 320px;
 }
 .timeline {
 	position: relative;
